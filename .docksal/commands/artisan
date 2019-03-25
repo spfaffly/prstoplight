@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+## Runs artisan
+##
+## Usage: fin artisan [params to passthrough]
+
+fin exec php artisan $1

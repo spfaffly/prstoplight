@@ -4,4 +4,4 @@
 ##
 ## Usage: fin artisan [params to passthrough]
 
-fin exec php artisan $1
+fin exec php artisan $@

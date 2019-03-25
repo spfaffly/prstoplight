@@ -11,3 +11,6 @@ npm-debug.log
 yarn-error.log
 
 .idea
+_ide_helper.php
+.docksal/docksal-local.env
+.docksal/docksal-local.yml

@@ -13,10 +13,13 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
+/*
+  Public API Routes
+*/
+Route::group(['prefix' => 'v1'], function(){
+    Route::post('/webhook', 'Api\Webhook@init');
 });
 
-Route::middleware('auth:api')->post('/webhook', function (Request $request) {
+Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
